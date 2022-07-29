@@ -1,0 +1,101 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "",
+    "expandedProjectPaths": [
+    ],
+    "file.lastUsedOpenFilter": "All Files (*)",
+    "fileStates": {
+        "/Users/michaelmacdonald/Terrain (16x16).tsx": {
+            "scaleInDock": 1
+        },
+        "/Users/michaelmacdonald/games/stackabuse-platformer/assets/tilemaps/level1.tmx": {
+            "scale": 0.67,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 428.3582089552239,
+                "y": 112.68656716417905
+            }
+        },
+        "/Users/michaelmacdonald/games/stackabuse-platformer/assets/tilemaps/level1.tmx#kenny_simple_platformer": {
+            "scaleInDock": 1
+        },
+        "/Users/michaelmacdonald/games/test/assets/tilemaps/level1.tmx": {
+            "scale": 1,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 549,
+                "y": 301.5
+            }
+        },
+        "/Users/michaelmacdonald/games/test/assets/tilemaps/level1.tmx#appleTileset": {
+            "scaleInDock": 1
+        },
+        "/Users/michaelmacdonald/games/test/assets/tilemaps/level1.tmx#apples_tileset": {
+            "scaleInDock": 1
+        },
+        "/Users/michaelmacdonald/games/test/assets/tilemaps/level1.tmx#test_platformer": {
+            "scaleInDock": 1
+        },
+        "/Users/michaelmacdonald/games/test2/assets/tile_maps/level2.tmx": {
+            "scale": 1,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 558,
+                "y": 322.5
+            }
+        },
+        "/Users/michaelmacdonald/games/test2/assets/tile_maps/level2.tmx#appleTileset": {
+            "scaleInDock": 1.5
+        },
+        "/Users/michaelmacdonald/games/test2/assets/tile_maps/level2.tmx#bananaTileset": {
+            "scaleInDock": 1.5
+        },
+        "/Users/michaelmacdonald/games/test2/assets/tile_maps/level2.tmx#platform_tiles": {
+            "scaleInDock": 1.5
+        },
+        "Terrain (16x16).tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "test platform.tmx": {
+            "scale": 1.73,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 210.40462427745666,
+                "y": 171.38728323699422
+            }
+        },
+        "test1.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        }
+    },
+    "last.exportedFilePath": "/Users/michaelmacdonald/games/test2/assets/tile_maps",
+    "last.imagePath": "/Users/michaelmacdonald/games/test/assets/Items/Fruits",
+    "map.height": 30,
+    "map.lastUsedExportFilter": "JSON map files (*.tmj *.json)",
+    "map.lastUsedFormat": "tmx",
+    "map.layerDataFormat": null,
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "map.width": 60,
+    "openFiles": [
+    ],
+    "project": "test.tiled-project",
+    "recentFiles": [
+        "/Users/michaelmacdonald/games/test2/assets/tile_maps/level2.tmx",
+        "/Users/michaelmacdonald/games/test/assets/tilemaps/level1.tmx",
+        "/Users/michaelmacdonald/games/stackabuse-platformer/assets/tilemaps/level1.tmx",
+        "test1.tsx",
+        "test platform.tmx",
+        "Terrain (16x16).tsx"
+    ],
+    "tileset.embedInMap": true,
+    "tileset.tileSize": {
+        "height": 32,
+        "width": 32
+    }
+}
