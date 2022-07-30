@@ -21,6 +21,13 @@ const config = {
   }
 }
 
+var startX;
+var startY;
+var endX;
+var endY;
+var scoreText;
+var score = 0;
+
 const game = new Phaser.Game(config);
 
 function preload() {
@@ -68,7 +75,20 @@ function create() {
     const cherrySprite = this.cherries.create(cherry.x, cherry.y - 32, 'cherry').setOrigin(0);
   });
 
-  this.player = this.physics.add.sprite(176, 64, 'maskDudeIdle');
+  map.getObjectLayer('StartEnd').objects.forEach(refPoint => {
+    if (refPoint.name == 'Start') {
+      startX = refPoint.x;
+      startY = refPoint.y;
+    }
+    if (refPoint.name == 'End') {
+      endX = refPoint.x;
+      endY = refPoint.y;
+    }
+  });
+
+  scoreText = this.add.text(16, 16, 'score: 0', {fontSize: '32px', fill: '#fff'});
+
+  this.player = this.physics.add.sprite(startX, startY, 'maskDudeIdle');
   this.player.setBounce(0.1);
   this.player.setCollideWorldBounds(true);
   this.physics.add.collider(this.player, platforms);
@@ -94,7 +114,12 @@ function create() {
     repeat: -1
   });
 
+  this.physics.add.overlap(this.player, this.apples, collectApple, null, this);
+  this.physics.add.overlap(this.player, this.bananas, collectBanana, null, this);
+  this.physics.add.overlap(this.player, this.cherries, collectCherry, null, this);
+
   this.cursors = this.input.keyboard.createCursorKeys();
+
 }
 
 function update() {
@@ -119,5 +144,28 @@ function update() {
     this.player.setVelocityY(-300);
     this.player.play('jump', true);
   }
+  if (this.player.body.velocity.x > 0) {
+    this.player.setFlipX(false);
+  } else if (this.player.body.velocity.x < 0) {
+    this.player.setFlipX(true);
+  }
 
+}
+
+function collectApple(player, apple) {
+  apple.disableBody(true, true);
+  score += 10;
+  scoreText.setText('score: ' + score);
+}
+
+function collectBanana(player, banana) {
+  banana.disableBody(true, true);
+  score += 20;
+  scoreText.setText('score: ' + score);
+}
+
+function collectCherry(player, cherry) {
+  cherry.disableBody(true, true);
+  score += 30;
+  scoreText.setText('score: ' + score);
 }
