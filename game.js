@@ -149,6 +149,10 @@ function update() {
   } else if (this.player.body.velocity.x < 0) {
     this.player.setFlipX(true);
   }
+  if ((((this.player.x + 16) > endX) && ((this.player.x - 16) < endX)) && (((this.player.y + 16) > endY) && ((this.player.y - 16) < endY))) {
+    this.player.disableBody(true, true);
+    scoreText.setText('GAME COMPLETE\nYour score: ' + score);
+  }
 
 }
 
