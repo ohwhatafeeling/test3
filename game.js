@@ -114,6 +114,39 @@ function create() {
     repeat: -1
   });
 
+  this.anims.create({
+    key: 'applePlay',
+    frames: this.anims.generateFrameNumbers('apple', {start: 0, end: 16}),
+    frameRate: 20,
+    repeat: -1
+  });
+
+  this.anims.create({
+    key: 'bananaPlay',
+    frames: this.anims.generateFrameNumbers('banana', {start: 0, end: 16}),
+    frameRate: 20,
+    repeat: -1
+  });
+
+  this.anims.create({
+    key: 'cherryPlay',
+    frames: this.anims.generateFrameNumbers('cherry', {start: 0, end: 16}),
+    frameRate: 20,
+    repeat: -1
+  });
+
+  this.apples.children.iterate(apple => {
+    apple.play('applePlay');
+  });
+
+  this.bananas.children.iterate(banana => {
+    banana.play('bananaPlay');
+  });
+
+  this.cherries.children.iterate(cherry => {
+    cherry.play('cherryPlay');
+  });
+
   this.physics.add.overlap(this.player, this.apples, collectApple, null, this);
   this.physics.add.overlap(this.player, this.bananas, collectBanana, null, this);
   this.physics.add.overlap(this.player, this.cherries, collectCherry, null, this);
