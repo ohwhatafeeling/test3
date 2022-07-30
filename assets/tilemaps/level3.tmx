@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.9" tiledversion="1.9.0" orientation="orthogonal" renderorder="right-down" width="60" height="30" tilewidth="16" tileheight="16" infinite="0" nextlayerid="6" nextobjectid="41">
+ <editorsettings>
+  <export target="level3.json" format="json"/>
+ </editorsettings>
  <tileset firstgid="1" name="platformTiles" tilewidth="16" tileheight="16" tilecount="242" columns="22">
   <image source="../Terrain/Terrain (16x16).png" width="352" height="176"/>
  </tileset>
@@ -34,13 +37,13 @@
   <object id="8" gid="243" x="784" y="432" width="32" height="32"/>
  </objectgroup>
  <objectgroup id="4" name="Bananas">
-  <object id="9" gid="260" x="48" y="32" width="32" height="32"/>
-  <object id="10" gid="260" x="0" y="112" width="32" height="32"/>
-  <object id="11" gid="260" x="0" y="144" width="32" height="32"/>
-  <object id="12" gid="260" x="0" y="176" width="32" height="32"/>
-  <object id="13" gid="260" x="80" y="32" width="32" height="32"/>
+  <object id="9" gid="260" x="32" y="224" width="32" height="32"/>
+  <object id="10" gid="260" x="16" y="128" width="32" height="32"/>
+  <object id="11" gid="260" x="0" y="160" width="32" height="32"/>
+  <object id="12" gid="260" x="16" y="192" width="32" height="32"/>
+  <object id="13" gid="260" x="96" y="32" width="32" height="32"/>
   <object id="28" gid="260" x="240" y="208" width="32" height="32"/>
-  <object id="30" gid="260" x="896" y="32" width="32" height="32"/>
+  <object id="30" gid="260" x="928" y="304" width="32" height="32"/>
   <object id="31" gid="260" x="864" y="32" width="32" height="32"/>
   <object id="32" gid="260" x="928" y="272" width="32" height="32"/>
   <object id="33" gid="260" x="928" y="240" width="32" height="32"/>
@@ -49,8 +52,8 @@
   <object id="36" gid="260" x="928" y="144" width="32" height="32"/>
  </objectgroup>
  <objectgroup id="5" name="Cherries">
-  <object id="20" gid="277" x="128" y="272" width="32" height="32"/>
-  <object id="21" gid="277" x="128" y="240" width="32" height="32"/>
+  <object id="20" gid="277" x="64" y="288" width="32" height="32"/>
+  <object id="21" gid="277" x="48" y="256" width="32" height="32"/>
   <object id="22" gid="277" x="312" y="80" width="32" height="32"/>
   <object id="23" gid="277" x="408" y="336" width="32" height="32"/>
   <object id="24" gid="277" x="712" y="224" width="32" height="32"/>
@@ -59,7 +62,7 @@
   <object id="27" gid="277" x="408" y="48" width="32" height="32"/>
   <object id="37" gid="277" x="800" y="272" width="32" height="32"/>
   <object id="38" gid="277" x="800" y="240" width="32" height="32"/>
-  <object id="39" gid="277" x="800" y="208" width="32" height="32"/>
+  <object id="39" gid="277" x="800" y="304" width="32" height="32"/>
   <object id="40" gid="277" x="576" y="208" width="32" height="32"/>
  </objectgroup>
 </map>
